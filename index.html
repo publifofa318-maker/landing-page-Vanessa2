@@ -56,9 +56,7 @@
       display:flex; align-items:center; justify-content:space-between;
       color:#fff;
     }
-    .brand{display:flex; align-items:center; gap:12px}
-    .brand img{height:38px; width:auto}
-    .brand .name{font-weight:800; letter-spacing:.2px}
+    /* Removido o estilo do logo do cabeçalho aqui, pois ele não existirá mais no HTML */
     .nav{display:flex; gap:20px; align-items:center}
     .nav a{padding:10px 12px; border-radius:12px; font-weight:500; opacity:.9}
     .nav a:hover{background:rgba(255,255,255,.08)}
@@ -76,8 +74,20 @@
     }
     .hero-inner{
       max-width:var(--container); margin:auto;
-      display:grid; grid-template-columns:1fr .8fr; gap:40px;
-      align-items:center;
+      display:grid; grid-template-columns:1fr .8fr; /* Mantém as duas colunas */
+      gap:40px;
+      align-items:center; /* Alinha os itens ao centro verticalmente */
+    }
+    /* Estilo para o container do logo na Hero Section */
+    .hero-logo-container {
+        text-align: center; /* Centraliza o logo */
+        margin-bottom: 20px; /* Espaço abaixo do logo */
+    }
+    /* Estilo para a imagem do logo na Hero Section */
+    .hero-logo {
+        max-width: 250px; /* Ajuste este valor para controlar a largura do logo */
+        width: 100%; /* Garante que o logo ocupe o espaço disponível até o max-width */
+        height: auto;
     }
     .kicker{color:var(--gold-300); font-weight:700; letter-spacing:.15em; text-transform:uppercase; font-size:.82rem}
     .title{font-size:clamp(2rem, 4vw + .5rem, 3.3rem); line-height:1.1; margin:.4rem 0 1rem; font-weight:800}
@@ -166,7 +176,7 @@
 
     /* Responsive */
     @media (max-width: 980px){
-      .hero-inner{grid-template-columns:1fr}
+      .hero-inner{grid-template-columns:1fr} /* Em telas menores, volta para uma coluna */
       .grid{grid-template-columns:repeat(2,1fr)}
       .info .cols{grid-template-columns:1fr}
       .quotes{grid-template-columns:1fr 1fr}
@@ -177,7 +187,7 @@
       .grid{grid-template-columns:1fr}
       .quotes{grid-template-columns:1fr}
       .cta-band{grid-template-columns:1fr}
-      .brand .name{display:none}
+      /* Removido .brand .name para que o logo possa ter sua própria linha no hero-inner */
     }
 
     /* Motion preferences */
@@ -193,7 +203,6 @@
   <header class="header" aria-label="Topo do site">
     <div class="header-inner">
       <a href="#topo" class="brand">
-        <img src="imagens/novo-logo.jpeg" alt="Logo Direito Passageiro" />
         <span class="name">Direito Passageiro</span>
       </a>
       <nav class="nav" aria-label="Navegação principal">
@@ -208,6 +217,9 @@
   <section id="topo" class="hero">
     <div class="hero-inner">
       <div>
+        <div class="hero-logo-container">
+          <img src="imagens/novo-logo.jpeg" alt="Logo Direito Passageiro" class="hero-logo">
+        </div>
         <div class="kicker">Passageiro, seu direito está aqui</div>
         <h1 class="title">Seus direitos em voos, simples e rápido</h1>
         <p class="subtitle">Atraso, cancelamento, overbooking ou bagagem extraviada? Entenda o que a ANAC e o CDC garantem e veja como agir na prática.</p>
@@ -413,6 +425,7 @@
   </script>
 </body>
 </html>
+
 
 
 
