@@ -6,13 +6,11 @@
   <title>Direito Passageiro — Seus direitos em voos</title>
   <meta name="description" content="Atraso, cancelamento, overbooking ou bagagem extraviada? Saiba seus direitos de passageiro aéreo e facilite seu pedido de assistência e indenização." />
   <meta name="theme-color" content="#0e1a75" />
-  <!-- Open Graph -->
   <meta property="og:title" content="Direito Passageiro — Seus direitos em voos" />
   <meta property="og:description" content="Informações claras, checklist e orientação prática sobre direitos do passageiro aéreo." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="logo-direito-passageiro.png" />
   <link rel="icon" href="favicon.ico" />
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -76,16 +74,11 @@
       color:#fff;
       padding:84px 24px 64px;
     }
-  .hero-inner{
-  max-width:var(--container);
-  margin:auto;
-  display:grid; /* Usa grid para criar colunas */
-  grid-template-columns:1.2fr .8fr; /* Divide a seção em duas colunas */
-  gap:40px;
-  align-items:center;
- .hero-inner > div {
-    text-align: right;
-}
+    .hero-inner{
+      max-width:var(--container); margin:auto;
+      display:grid; grid-template-columns:1fr .8fr; gap:40px;
+      align-items:center;
+    }
     .kicker{color:var(--gold-300); font-weight:700; letter-spacing:.15em; text-transform:uppercase; font-size:.82rem}
     .title{font-size:clamp(2rem, 4vw + .5rem, 3.3rem); line-height:1.1; margin:.4rem 0 1rem; font-weight:800}
     .subtitle{color:#e8ecff; font-family:Poppins; font-weight:300; font-size:1.05rem; margin-bottom:22px}
@@ -197,41 +190,34 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header" aria-label="Topo do site">
     <div class="header-inner">
       <a href="#topo" class="brand">
-        <!-- Troque o src abaixo pelo caminho do seu logo -->
-       
+        <img src="imagens/novo-logo.jpeg" alt="Logo Direito Passageiro" />
         <span class="name">Direito Passageiro</span>
       </a>
       <nav class="nav" aria-label="Navegação principal">
         <a href="#beneficios">Benefícios</a>
         <a href="#informacoes">Informações</a>
         <a href="#faq">Perguntas</a>
-        <a href="#contato" class="cta">Falar no WhatsApp</a>
+        <a href="https://wa.me/5599999999999?text=Quero%20saber%20meus%20direitos%20de%20passageiro" class="cta">Falar no WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
   <section id="topo" class="hero">
     <div class="hero-inner">
       <div>
-    <div style="text-align:center; margin-bottom: 30px;">
-  <img src="imagens/logosemf.jpeg" alt="Logo Direito Passageiro" style="max-width: 200px; height: auto;">
-</div>
-<div>
-  <div class="kicker">Passageiro, seu direito está aqui</div>
-  <h1 class="title">Seus direitos em voos, simples e rápido</h1>
-  <p class="subtitle">Atraso, cancelamento, overbooking ou bagagem extraviada? Entenda o que a ANAC e o CDC garantem e veja como agir na prática.</p>
-  <div class="hero-actions">
-    <a class="btn btn-primary" href="https://wa.me/55SEUNUMERO?text=Quero%20saber%20meus%20direitos%20de%20passageiro" target="_blank" rel="noopener">
-      📲 Falar no WhatsApp
-    </a>
-    <a class="btn btn-secondary" href="#beneficios">Ver meus direitos</a>
-  </div>
-</div>
+        <div class="kicker">Passageiro, seu direito está aqui</div>
+        <h1 class="title">Seus direitos em voos, simples e rápido</h1>
+        <p class="subtitle">Atraso, cancelamento, overbooking ou bagagem extraviada? Entenda o que a ANAC e o CDC garantem e veja como agir na prática.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/5599999999999?text=Quero%20saber%20meus%20direitos%20de%20passageiro" target="_blank" rel="noopener">
+            📲 Falar no WhatsApp
+          </a>
+          <a class="btn btn-secondary" href="#beneficios">Ver meus direitos</a>
+        </div>
+      </div>
 
       <aside class="hero-card" aria-label="Checklist rápido">
         <h3>Checklist rápido ✅</h3>
@@ -248,7 +234,6 @@
     </div>
   </section>
 
-  <!-- Benefícios -->
   <section id="beneficios" class="section container" aria-labelledby="beneficios-title">
     <h2 class="section-title" id="beneficios-title">O que você encontra aqui</h2>
     <p class="section-desc">Informações claras, modelos de mensagem e passos práticos para usar seus direitos com a companhia aérea.</p>
@@ -277,7 +262,6 @@
     </div>
   </section>
 
-  <!-- Informações -->
   <section id="informacoes" class="section info" aria-labelledby="info-title">
     <div class="container">
       <h2 class="section-title" id="info-title">Seus direitos, em linguagem simples</h2>
@@ -292,7 +276,7 @@
         </div>
         <div>
           <h3>Modelo de mensagem</h3>
-          <p>“Sou passageiro do voo <strong>[nº]</strong> em <strong>[data]</strong>. Diante do <strong>[atraso/cancelamento]</strong>, solicito conforme ANAC: <strong>reacomodação</strong> na primeira oportunidade ou <strong>reembolso integral</strong>. Também peço a <strong>assistência material</strong> cabível. Protocolo: __.”</p>
+          <p>“Sou passageiro do voo <strong>[nº]</strong> em <strong>[data]</strong>. Diante do <strong>[atraso/cancelamento]</strong>, solicito conforme ANAC: <strong>reacomodação</strong> na primeira oportunidade ou <strong>reembolso integral</strong>. Também peço a <strong>assistência material</strong> cabível. Protocolo: ______.”</p>
           <div class="cta-band" role="complementary">
             <div>
               <strong>Precisa de ajuda agora?</strong><br/>
@@ -305,7 +289,6 @@
     </div>
   </section>
 
-  <!-- Depoimentos -->
   <section class="section testimonials" aria-labelledby="dep-title">
     <div class="container">
       <h2 class="section-title" id="dep-title">Quem já usou aprovou</h2>
@@ -326,7 +309,6 @@
     </div>
   </section>
 
-  <!-- FAQ -->
   <section id="faq" class="section container" aria-labelledby="faq-title">
     <h2 class="section-title" id="faq-title">Perguntas frequentes</h2>
 
@@ -346,7 +328,6 @@
     </div>
   </section>
 
-  <!-- Contato -->
   <section id="contato" class="section container" aria-labelledby="contato-title">
     <h2 class="section-title" id="contato-title">Fale com a gente</h2>
     <p class="section-desc">Envie seu caso e receba orientação em poucos minutos.</p>
@@ -372,12 +353,11 @@
     </form>
   </section>
 
-  <!-- Footer -->
   <footer role="contentinfo">
     <div class="footer-inner">
       <div>
         <div class="brand" style="margin-bottom:8px">
-          <img src="logo-direito-passageiro.png" alt="Logo Direito Passageiro" />
+          <img src="imagens/novo-logo.jpeg" alt="Logo Direito Passageiro" />
           <strong>Direito Passageiro</strong>
         </div>
         <p class="small">Informação clara para quem voa. Este site não substitui aconselhamento jurídico individual.</p>
@@ -433,6 +413,7 @@
   </script>
 </body>
 </html>
+
 
 
 
